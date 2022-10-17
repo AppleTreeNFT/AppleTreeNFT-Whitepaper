@@ -9,7 +9,7 @@ _Note: this document is currently a work in progress!_
 
 ## Abstract
 
-The Crypto Apple Trees project is an innovative collection of interest-bearing, dividend paying NFTs. 
+The Crypto Apple Trees is an innovative project of interest-bearing, dividend paying NFTs. 
 
 
 <br/>
@@ -19,7 +19,9 @@ The Crypto Apple Trees project is an innovative collection of interest-bearing, 
 
 The technology behing the Crypto Apple Trees project is a set of Solidity smart contracts and websites for interacting with them via web3.
 
-Crypto Apple Trees will go live on the MATIC mainnet network. We believe this is the best network because it has very low gas fees, supports Solidity smart contracts, and has a proven track record of supporting large, popular web3 games such as zed.run and Decentraland. 
+Crypto Apple Trees will go live on the MATIC mainnet network (currently being tested on the MATIC Mumbai testnet). We believe this is the best network because it has very low gas fees, supports Solidity smart contracts, and has a proven track record of supporting large, popular web3 games such as zed.run and Decentraland.
+
+The client for connecting to our smart contracts is a browser web application built with React.
 
 
 <br/>
@@ -29,6 +31,7 @@ Crypto Apple Trees will go live on the MATIC mainnet network. We believe this is
 
 Unlike other NFTs, apple tree NFTs grow APPLE token over time. This APPLE can periodically be can be harvested (ie. minted) by the owner of the tree, and some APPLE token goes right into the owner's wallet.
 
+_Imagine "Farmville" but with crypto..._
 
 <br/>
 
