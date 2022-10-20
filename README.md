@@ -9,7 +9,7 @@ _Note: this document is currently a work in progress!_
 
 ## Abstract
 
-The Crypto Apple Trees is an innovative project of interest-bearing, dividend paying NFTs. 
+The Crypto Apple Trees is an innovative project of interest-bearing NFTs that literally _bear fruits_ that grow in real time. 
 
 
 <br/>
@@ -38,7 +38,7 @@ All smart contracts will be deployed from the command line and have extensive un
 
 Unlike other NFTs, apple tree NFTs grow APPLE token over time. This APPLE can periodically be can be harvested (ie. minted) by the owner of the tree, and some APPLE token goes right into the owner's wallet.
 
-_Imagine "Farmville" but with crypto..._
+_Think "farming simulator" but with real crypto being grown!_
 
 <br/>
 
@@ -80,12 +80,9 @@ The NFTs in this world are all apple trees. Each apple tree is born with various
 
 ## Gen Zero Trees
 
-Trees can only be created in two ways:
-
-1. Gen Zero (generation zero) TREEs are created by the DAO (see gen zero minting guidelines for more info). These TREEs will be either immediately put up for sale publicly in the game marketplace (with the DAO as the sale beneficiary) _or_ they will be minted to a member of one of the gen zero beneficiary groups.
+Gen Zero (generation zero) TREEs are created by the DAO (see gen zero minting guidelines for more info). These TREEs will be either immediately put up for sale publicly in the game marketplace (with the DAO as the sale beneficiary) _or_ they will be minted to a member of one of the gen zero beneficiary groups.
 
 <br/>
-
 
 
 ## TREE Breeding
@@ -116,18 +113,16 @@ Users can:
 
 _Note: Our webapp will __only__ support buying and selling with the APPLE token. However, since the TREE NFTs follow the Erc721 standard, they can easily be purchased and sold using other cryptocurrencies on other exchanges (eg. OpenSea)_
 
+Minimum price: 1 APPLE
 
 <br/>
-
 
 ## Advantages of the In-Game Marketplace over OpenSea
 
 - Other users in the game are constantly collecting APPLE and looking for ways to spend it.
 - We plan to charge a 0.5% less commission than competitors like OpenSea (who currently charge 2.5% on every transaction!)  
 
-
 <br/>
-
 
 ## AppleTree DAO Token
 
@@ -152,7 +147,6 @@ The DAO makes revenue from 3 activities in the game:
 - Commissions from in-game marketplace
 
 <br/>
-
 
 ## APPENDIX A - Apple Production Calculation
 
@@ -204,8 +198,24 @@ fibonacci_nutrition_score: incorporates the nutrition score into the calculation
 
 ## APPENDIX B - Breeding Cost Calculation
 
-// TODO
+In order to limit an explosion of breeding and TREEs we implement a _minimum breeding cost_ that must be charged for breeding.
 
+```
+MIN_BREEDING_COST = floor + sqrt(supply_of_APPLE) * sqrt(supply_of_TREEs) * percentage_factor
+```
+
+### Constants:
+
+floor: 10 APPLE
+
+percentage_factor: 5
+
+
+### Variables
+
+sqrt(supply_of_APPLE): the square root of the total supply of uneaten APPLE tokens in existence
+
+sqrt(supply_of_TREEs): the square root of the total supply of TREE NFTs in existence
 
 <br/>
 
