@@ -1,7 +1,7 @@
 # Crypto Apple Tree NFT Whitepaper
 Official whitepaper for the Crypto Apple Trees project.
 
-_Note: this document is currently a work in progress!_
+_Note: This document is still a work in progress!_
 
 
 <br/>
@@ -53,7 +53,7 @@ _Note: In the game marketplace users can only list TREEs for sale in terms of AP
 
 2. Breeding TREEs - Owners can list TREEs as "available for breeding", and users pay APPLE to breed with it and keep the offspring, whose stats are a combination of those that the parents have.
 
-3. Eating APPLE - On the site there is a little form that allows users to "eat" some amount of their APPLE tokens. Any APPLE that is eaten gets destroyed (or _burned_, in crypto terms). Every user address has a "nutrition score", and eating APPLE increases the n utrition score associated with that adderss that ate the APPLE. The benefit of increasing your nutrition score is that every time some APPLE is harvested, the amount harvested is slightly influenced by the owner's nutrition score, producing more APPLE for higher nutrition scores.
+3. Eating APPLE - On the site there is a little form that allows users to "eat" some amount of their APPLE tokens. Any APPLE that is eaten gets destroyed (or _burned_, in crypto terms). Every user address has a "nutrition score", and eating APPLE increases the nutrition score associated with that adderss that ate the APPLE. The benefit of increasing your nutrition score is that every time some APPLE is harvested, the amount harvested is slightly influenced by the owner's nutrition score, producing more APPLE for higher nutrition scores.
 
 4. Selling APPLE - Suppose you want to take some of your APPLE and cash out- maybe you want to buy some other NFTs, or maybe you want to convert some to another cryptocurrency like Ether or Bitcoin. Since the APPLE token follows the ERC20 standard, it can be traded on decentralized exchanged on the MATIC network, such as sushiswap. We will also work to get APPLE listed on centralized exchantes such as Coinbase and Kucoin. 
 
@@ -72,7 +72,7 @@ This is a stark contrast to many projects that mint a massive supply to the proj
 <br/>
 
 
-## TREE - The NFT collection
+## TREEs - The NFT Collection
 
 The NFTs in this world are all apple trees. Each apple tree is born with various immutable stats that control various parameters, for example how long is takes for the tree to grow harvestable APPLE.
 
@@ -130,7 +130,7 @@ The AppleTree Dao Token (ATDT) is a governance token for the AppleTreeNFT projec
 
 Holders of this token will be able to create and vote on proposals for the project.
 
-Holders of this token will also be elligible for "dividend payments" from the Treasury when a proposal to distribute funds is passed.
+Holders of this token will also be elligible for "dividend payouts" from the Treasury when a proposal to distribute funds is passed.
 
 <br/>
 
@@ -150,26 +150,10 @@ The DAO makes revenue from 3 activities in the game:
 
 ## APPENDIX A - Apple Production Calculation
 
-Minting APPLE can __only__ be done by collecting APPLE from the tree.
-
-In the snippet below from the verified APPLE smart contract we can see that the ERC20 _mint_ function is ONLY called from this location. There is no backdoor way to create APPLE outside of the TREE contract. Even the contract owner cannot mint APPLE directly, and there is zero APPLE created when the contract is first deployed.
-
-```
-address public TREE_address;
-
-modifier onlyCalledByTREE() {
-  require(msg.sender == TREE_address, 'Only the TREE contract can call this function');
-  _;
-}
-  
-function mint(address account, uint256 amount) public onlyCalledByTREE {
-  _mint(account, amount);
-}
-```
 
 So, how does the TREE contract know how much to APPLE to mint?
 
-The amount of APPLE minted depends on this calculation, which has been extracted into the `apples_to_mint_calculation` function
+The amount of APPLE minted depends on this calculation, which will look something like this:
 
 ```
 APPLE_MINTED = floor + multiplier_constant * growth_strength * tree_age^2 / (tree_age^2 + balancer_constant / fibonacci_nutrition_score)
