@@ -54,7 +54,100 @@ _Note: In the game marketplace users can only list TREEs for sale in terms of AP
 <br/>
 
 
-## Apple Production Calculation
+## ZERO Initially Minted APPLE, No "Backdoor Minting" Functionality
+
+In the spirit of fairness and transparency, the APPLE token can ___ONLY___ be minted by the TREE smart contract.
+
+There are no APPLE tokens minted upfront and no other way for the contract owner to mint APPLE directly.
+
+This is a stark contrast to many projects that mint a massive supply to the project creators (either initially or over time) prowe have decided to not 
+
+<br/>
+
+
+## TREE - The NFT collection
+
+The NFTs in this world are all apple trees. Each apple tree is born with various immutable stats that control various parameters, for example how long is takes for the tree to grow harvestable APPLE.
+
+<br/>
+
+## Gen Zero Trees
+
+Trees can only be created in two ways:
+
+1. Gen Zero (generation zero) TREEs are created by the DAO (see gen zero minting guidelines for more info). These TREEs will be either immediately put up for sale publicly in the game marketplace (with the DAO as the sale beneficiary) _or_ they will be minted to a member of one of the gen zero beneficiary groups.
+
+<br/>
+
+
+
+## TREE Breeding
+Two TREE NFTs can be bred together to create an offspring TREE! 
+
+The breeding process is relatively simple:
+
+1. User A lists his or her TREE for breeding at some price in APPLE token (above or equal to the minimum breeding price)
+
+2. User B pays the asking of APPLE, immediately triggering a new TREE to be minted to user B. The offspring TREE NFT has trait values that are exactly the averages of the parents TREEs' traits (no randomness!).
+
+<br/>
+
+## Minimum Breeding Price
+In order to stifle an otherwise exploding supply of TREEs, we have built in a minimum price at which TREEs must be listed. This price is calculated dynamically and fluctuates based on the total supply of TREE NFTs, total supply of APPLE, and ___. See appendix B for more details on how the minimum breeding price is calculated.
+
+
+<br/>
+
+## In-Game Marketplace
+Users will have the ability to buy and sell TREEs directly in our website.
+
+Users can:
+
+- list their TREEs for sale
+- cancel a listing for one of their TREEs
+- purchase a TREE for sale
+
+_Note: Our webapp will __only__ support buying and selling with the APPLE token. However, since the TREE NFTs follow the Erc721 standard, they can easily be purchased and sold using other cryptocurrencies on other exchanges (eg. OpenSea)_
+
+
+<br/>
+
+
+## Advantages of the In-Game Marketplace over OpenSea
+
+- Other users in the game are constantly collecting APPLE and looking for ways to spend it.
+- We plan to charge a 0.5% less commission than competitors like OpenSea (who currently charge 2.5% on every transaction!)  
+
+
+<br/>
+
+
+## AppleTree DAO Token
+
+The AppleTree Dao Token (ATDT) is a governance token for the AppleTreeNFT project.
+
+Holders of this token will be able to create and vote on proposals for the project.
+
+Holders of this token will also be elligible for "dividend payments" from the Treasury when a proposal to distribute funds is passed.
+
+<br/>
+
+## AppleTree Treasury
+
+The Treasury collects all funds for which the DAO is the beneficiary.
+
+The DAO makes revenue from 3 activities in the game:
+
+- Sale of gen zero TREEs where the DAO is the beneficiary
+
+- Commissions from breeding
+
+- Commissions from in-game marketplace
+
+<br/>
+
+
+## APPENDIX A - Apple Production Calculation
 
 Minting APPLE can __only__ be done by collecting APPLE from the tree.
 
@@ -102,17 +195,10 @@ fibonacci_nutrition_score: incorporates the nutrition score into the calculation
 <br/>
 
 
-## Breeding Cost Calculation
+## APPENDIX B - Breeding Cost Calculation
 
 // TODO
 
-
-<br/>
-
-
-## Gen Zero TREEs
-
-// TODO
 
 <br/>
 
