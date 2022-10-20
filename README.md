@@ -23,7 +23,13 @@ Crypto Apple Trees will go live on the MATIC mainnet network (currently being te
 
 The client for connecting to our smart contracts is a browser web application built with React.
 
+The APPLE token will be a slightly modified erc20 smart contract.
+
+The TREE NFT connection will be a slightly modified Erc721 contract.
+
 The DAO token will be a slightly customized erc20 token smart contract, also deployed on MATIC mainnet, with the "snapshot" platform providing proposals and voting functionality.
+
+All smart contracts will be deployed from the command line and have extensive unit testing.
 
 <br/>
 
