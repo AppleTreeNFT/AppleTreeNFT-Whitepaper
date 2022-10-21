@@ -15,6 +15,15 @@ The Crypto Apple Trees is an innovative project of interest-bearing NFTs that li
 <br/>
 
 
+## Dividend Paying NFTs
+
+Unlike other NFTs, apple tree NFTs grow APPLE token over time. This APPLE can periodically be can be harvested (ie. minted) by the owner of the tree, and some APPLE token goes right into the owner's wallet.
+
+_Think "farming simulator" but with real crypto being grown!_
+
+<br/>
+
+
 ## Tech
 
 The technology behing the Crypto Apple Trees project is a set of Solidity smart contracts and websites for interacting with them via web3.
@@ -32,16 +41,6 @@ The DAO token will be a slightly customized erc20 token smart contract, also dep
 All smart contracts will be deployed from the command line and have extensive unit testing.
 
 <br/>
-
-
-## Dividend Paying NFTs
-
-Unlike other NFTs, apple tree NFTs grow APPLE token over time. This APPLE can periodically be can be harvested (ie. minted) by the owner of the tree, and some APPLE token goes right into the owner's wallet.
-
-_Think "farming simulator" but with real crypto being grown!_
-
-<br/>
-
 
 ## APPLE - The Core Game Currency
 
