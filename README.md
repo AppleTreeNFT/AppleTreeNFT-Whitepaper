@@ -3,6 +3,7 @@ Official whitepaper for the Crypto Apple Trees project.
 
 _Note: This document is still a work in progress!_
 
+<img src='./images/Tree-Image.png' width=200/>
 
 <br/>
 
@@ -146,6 +147,12 @@ The DAO makes revenue from 3 activities in the game:
 - Commissions from in-game marketplace
 
 <br/>
+
+## Why Apple & Trees
+Apples are one of the purest form of food in existence, dating back to the very origins of man. We hope that this project inpires our users to conenct more with nature- to go outside, to travel more, to eat more raw plants, and to live their besat lives!
+
+<br/>
+
 
 ## APPENDIX A - Apple Production Calculation
 
