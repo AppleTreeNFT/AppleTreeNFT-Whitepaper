@@ -8,7 +8,7 @@ _Note: This document is still a work in progress!_
   
 <img src='./images/Tree-Image.png' width=200/>
 
-<img src='./images/Tree-Image-2.png' width=200/>
+<img src='./images/Tree-Image-2.png' width=210/>
 
  </div>
   
