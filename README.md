@@ -3,8 +3,15 @@ Official whitepaper for the Crypto Apple Trees project.
 
 _Note: This document is still a work in progress!_
 
+
+<div >
+  
 <img src='./images/Tree-Image.png' width=200/>
 
+<img src='./images/Tree-Image-2.png' width=200/>
+
+ </div>
+  
 <br/>
 
 
